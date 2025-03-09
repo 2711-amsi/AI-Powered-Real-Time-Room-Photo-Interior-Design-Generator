@@ -25,7 +25,7 @@ git clone https://github.com/siegblink/interior-designer-ai.git
 - Open your project folder in VSCode.
 - Open the terminal and run the following commands:
 ```bash
-cd interior-designer-ai/backend
+cd backend
 npm install
 npm start
 ```
@@ -33,7 +33,7 @@ npm start
 ### 3. Frontend Setup
 - Open another terminal and run the following commands:
 ```bash
-cd interior-designer-ai/frontend
+cd frontend
 npm install
 npm start
 ```
@@ -41,7 +41,7 @@ npm start
 ### 4. Access the Application
 Once both the frontend and backend are running, open your browser and go to:
 ```
-http://localhost:3000
+http://localhost:5000
 ```
 
 ## Features
