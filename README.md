@@ -55,6 +55,55 @@ http://localhost:5000
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **AI**: Replicative API for generating furniture designs
+## API Details
+The backend of this project communicates with Replicative API to generate AI-powered interior designs. The model used for image generation is **ControlNet**, which allows for controlled and precise image generation based on user inputs.
+
+**Replicative API Website:** [https://replicate.com/](https://replicate.com/)
+
+### API Endpoints
+#### 1. Generate Design
+**Endpoint:** `/api/generate`
+**Method:** POST
+**Description:** Sends user preferences and image inputs to the AI model and returns generated designs.
+**Request Body:**
+```json
+{
+  "image": "base64_encoded_image",
+  "preferences": {
+    "model": "modern",
+    "roomtype": "bedroom",
+    "budget": "50000",
+    "colour":"red"
+  }
+}
+```
+**Response:**
+```json
+{
+  "design_url": "https://generated-image-url.com",
+  "confidence": 0.98
+}
+```
+
+#### 2. Fetch History
+**Endpoint:** `/api/history`
+**Method:** GET
+**Description:** Retrieves previously generated designs for a user.
+**Response:**
+```json
+[
+  {
+    "design_url": "https://generated-image1.com",
+    "rating": 4.5,
+    "timestamp": "2025-03-09T12:00:00Z"
+  },
+  {
+    "design_url": "https://generated-image2.com",
+    "rating": 5.0,
+    "timestamp": "2025-03-08T14:30:00Z"
+  }
+]
+```
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
