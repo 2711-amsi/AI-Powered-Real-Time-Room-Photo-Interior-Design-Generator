@@ -1,4 +1,4 @@
-# Interior Designer AI
+# AI-Powered-Real-Time-Room-Photo-Interior-Design-Generator
 
 ## Project Structure
 This project is an AI-powered furniture interior designing system that generates customized designs based on user input. It integrates Replicative API for generating designs, with a React.js front-end and a Node.js/Express.js backend. Users can upload images, take a quiz for design preferences, view 3D renders of furniture, and provide ratings for the designs.
