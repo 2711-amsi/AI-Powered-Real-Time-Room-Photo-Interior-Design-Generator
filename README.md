@@ -18,7 +18,7 @@ Ensure you have the following installed:
 ### 1. Clone the Repository
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/siegblink/interior-designer-ai.git
+git clone https://github.com/2711-amsi/AI-Powered-Real-Time-Room-Photo-Interior-Design-Generator.git
 ```
 
 ### 2. Backend Setup
