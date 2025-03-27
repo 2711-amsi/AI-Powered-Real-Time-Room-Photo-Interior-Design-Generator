@@ -5,7 +5,6 @@ const ratingSchema = new mongoose.Schema({
   outputImageUrl: { type: String},
   theme: { type: String },
   room: { type: String },
-  dimensions: { type: String },
   budget: { type: String},
   colorPalette: { type: String },
   rating: { type: Number},

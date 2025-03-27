@@ -307,11 +307,23 @@ app.post('/api/design-room', async (req, res) => {
 
     const model = 'jagilley/controlnet-hough:854e8727697a057c525cdb45ab037f64ecca770a1769cc52287c2e56472a247b'; // Model ID
 
-    const input = {
-      image, // Use the image URL received from frontend
-      prompt: `A ${theme} ${room} Editorial Style Photo, Dimensions: ${dimensions}, Budget: ${budget}$, Room Color should be: ${colorPalette}, Symmetry, Straight On, Modern Living Room, Large Window, Leather, Glass, Metal, Wood Paneling, Neutral Palette, Ikea, Natural Light, Apartment, Afternoon, Serene, Contemporary, 4k`,
-      a_prompt: `best quality, extremely detailed, photo from Pinterest, interior, cinematic photo, ultra-detailed, ultra-realistic, award-winning`,
-    };
+const input = {
+  image, // Use the image URL received from frontend
+  prompt: `A ${theme} ${room} Editorial Style Photo with the following details: 
+  - Dimensions: ${dimensions}
+  - Budget: ${budget}$
+  - Room Color Palette: ${colorPalette}
+  - Design Style: Symmetry, Straight-On, Contemporary, Modern, Serene
+  - Materials: Leather, Glass, Metal, Wood Paneling
+  - Lighting: Natural Light, Afternoon Setting
+  - Specific Features: Large Window, Ikea-inspired, Cozy yet Elegant Atmosphere
+  - Resolution: 4K 
+  - Ensure the color scheme strictly follows: ${colorPalette}, making it visually prominent in the furniture, walls, and decor.`,
+  
+  a_prompt: `best quality, extremely detailed, realistic interior, cinematic photo, ultra-detailed, ultra-realistic, award-winning, color-accurate, furniture and decor with ${colorPalette}, well-balanced composition, high-end editorial photography`,
+};
+
+
 
     // Run the model on Replicate
     const output = await replicate.run(model, { input });

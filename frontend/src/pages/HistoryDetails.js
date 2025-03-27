@@ -69,8 +69,8 @@ const HistoryDetails = () => {
 
       <p><strong>Theme:</strong> {details.theme}</p>
       <p><strong>Room:</strong> {details.room}</p>
-      <p><strong>Dimensions:</strong> {details.dimensions}</p>
-      <p><strong>Budget:</strong> ${details.budget}</p>
+      {/* <p><strong>Dimensions:</strong> {details.dimensions}</p> */}
+      {/* <p><strong>Budget:</strong> ${details.budget}</p> */}
       <p><strong>Color Palette:</strong> {details.colorPalette}</p>
       <p><strong>Rating:</strong> {details.rating} ⭐</p>
       <p><strong>Date:</strong> {new Date(details.date).toLocaleString()}</p>
