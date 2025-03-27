@@ -318,7 +318,7 @@ const input = {
   - Lighting: Natural Light, Afternoon Setting
   - Specific Features: Large Window, Ikea-inspired, Cozy yet Elegant Atmosphere
   - Resolution: 4K 
-  - Ensure the color scheme strictly follows: ${colorPalette}, making it visually prominent in the furniture, walls, and decor.`,
+  - Ensure the color scheme strictly follows: ${colorPalette},ensure all the material cost for designing should follow : ${budget}, making it visually prominent in the furniture, walls, and decor.`,
   
   a_prompt: `best quality, extremely detailed, realistic interior, cinematic photo, ultra-detailed, ultra-realistic, award-winning, color-accurate, furniture and decor with ${colorPalette}, well-balanced composition, high-end editorial photography`,
 };
